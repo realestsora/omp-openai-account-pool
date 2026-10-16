@@ -1,0 +1,34 @@
+{
+    "name": "omp-openai-account-pool",
+    "version": "0.1.0",
+    "description": "Multi-account OpenAI Codex usage status and automatic account rotation for omp.",
+    "homepage": "https://omp.sh",
+    "license": "MIT",
+    "type": "module",
+    "files": [
+        "src",
+        "assets",
+        "README.md",
+        "package.json",
+        "tsconfig.json",
+        ".prettierrc",
+        ".editorconfig"
+    ],
+    "omp": {
+        "name": "OpenAI Account Pool",
+        "description": "Shows OpenAI Codex account usage, pins accounts, and rotates exhausted accounts.",
+        "extensions": [
+            "./src/index.ts"
+        ]
+    },
+    "scripts": {
+        "format": "prettier --write .prettierrc package.json src/*.ts tsconfig.json",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@oh-my-pi/pi-ai": "18.11.1",
+        "@oh-my-pi/pi-coding-agent": "18.11.1",
+        "prettier": "3.9.10",
+        "typescript": "7.0.2"
+    }
+}
