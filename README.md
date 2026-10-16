@@ -29,7 +29,13 @@ This plugin targets `openai-codex` ChatGPT OAuth accounts. It does not manage `O
 
 ## Install
 
-From this directory:
+Install the plugin directly from GitHub:
+
+```sh
+omp plugin install https://github.com/realestsora/omp-openai-account-pool.git
+```
+
+For local development from a checkout:
 
 ```sh
 omp plugin link .
